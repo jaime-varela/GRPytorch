@@ -1,8 +1,9 @@
 import torch
 import torch.nn as nn
 
-# TODO: fix the evaluation of tensors.  Schwarchild riemann should be zero and its not
-# also, ensure you're following a standard concention for the tensor definitions
+# TODO: fix the evaluation of tensors.  The ricci tensor tensor for schwarchild should be zero.
+# the reason for the error is likely due to numerical error from second order auto-differentiation.
+# Also, references are needed to the tensor conventions in use
 
 
 class SpaceTimeMetricModule(nn.Module):
